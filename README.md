@@ -1,5 +1,11 @@
 # Welcome to your Expo app 👋
 
+First thing you have todo is to install all the requirements dependencies that are in requirements.txt by runnig:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
 ## Get started
