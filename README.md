@@ -1,5 +1,6 @@
-# Welcome to your Expo app 👋
+# Welcome to Agro Niger 👋
 
+This is a tomato diseases classifier.
 The first thing you need to do is install all the required dependencies listed in `requirements.txt` by running:
 
    ```bash
