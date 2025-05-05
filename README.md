@@ -1,6 +1,6 @@
 # Welcome to your Expo app 👋
 
-First thing you have todo is to install all the requirements dependencies that are in requirements.txt by runnig:
+The first thing you need to do is install all the required dependencies listed in `requirements.txt` by running:
 
    ```bash
    pip install -r requirements.txt
