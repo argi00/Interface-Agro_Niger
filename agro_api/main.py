@@ -60,6 +60,8 @@ def load_model():
         return None
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    # Note: weights_only=False is required because the model file contains the full
+    # model architecture, not just state dict. Only load models from trusted sources.
     model = torch.load(MODEL_PATH, map_location=device, weights_only=False)
     model.eval()
     return model
@@ -91,7 +93,7 @@ app = FastAPI(
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
-    allow_credentials=True,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
