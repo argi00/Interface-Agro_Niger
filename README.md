@@ -17,11 +17,14 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    ```bash
    npm install
    ```
-2.start the serveur, go to agro_api and type
+2. Start the server
 
    ```bash
-      uvicorn app1:app --reload
+   uvicorn agro_api.main:app --reload
    ```
+
+   > Note: Place your trained PyTorch model file as `agro_api/model.pt` or set the `MODEL_PATH` environment variable to point to your model file.
+
 3. Start the app
 
    ```bash
